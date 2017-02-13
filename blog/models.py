@@ -2,7 +2,18 @@ from django.db import models
 from colorfield.fields import ColorField
 from django.utils import timezone
 # Create your models here.
-# Mahmoud Saleh, [03.01.17 22:09]
+
+class User(models.Model):
+    name = models.CharField(max_length=200)
+    major = models.CharField(max_length=200)
+    year = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
+    def publish(self):
+        self.save()
+    def __str__(self):
+        return self.name
+
+
 class Event(models.Model):
     title = models.CharField(max_length=200)
     start = models.DateTimeField()
