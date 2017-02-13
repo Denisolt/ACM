@@ -88,7 +88,7 @@
                         <p class="intro-text">Association for Computing
                             Machinery
                             <br>NYIT Manhattan Chapter</p>
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">join now</a>
+                            <a href="signup" class="btn btn-default btn-lg">join now</a>
                             </br>                            </br>
                             </br>                            </br>
                             </br>
@@ -128,7 +128,7 @@
                     <div class="post">
                         <div class="date"></div>
 
-                            <h1><a href="">{{ post.title }}</a></h1>
+                            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                          {% if post.img %}
                                 <img src={{post.img}}, width="100%">
                          {% endif %}
@@ -158,80 +158,79 @@
                     <p>We host many different types of events, starting from techincal workshops and ending with coding challenges and conferences.
                     We encourage all students to participate in as many events as possible in order to learn more, create their own projects and
                     just have fun in general. All our events are open for students of any major and year. Check out our photo reports from our events</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">photo reports</a>
                 </div>
+
             </div>
-        </div>
-    </section>
+            <div class="row">
+              <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Python/Web Development</h3>
+                    <span class="cat">Workshops/Projects</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Internet of Things (IoT)</h3>
+                    <span class="cat">Workshops/Projects</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-   <section id="download" class="container content-section text-center">
-        <div class="row">
-
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Python/Web Development</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Internet of Things (IoT)</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Virtual Reality</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Ethical Hacking</h3>
-                                </div>
-                            </div>
-                        </div>
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Coding Competitions</h3>
-                                </div>
-                            </div>
-                        </div>
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Distingushed Speakers</h3>
-                                </div>
-                            </div>
-                        </div>
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>MicroMouse</h3>
-                                </div>
-                            </div>
-                        </div>
-                <div class="col-md-6 text-center animate-box">
-                            <div class="inner">
-                                <div class="desc">
-                                    <h3>Conferences</h3>
-                                </div>
-                            </div>
-                        </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
+          <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Virtual/Augmented Reality</h3>
+                    <span class="cat">Workshops/Projects</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Ethical Hacking</h3>
+                    <span class="cat">Workshops/Projects</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Distingushed Speakers</h3>
+                    <span class="cat">Social/Networking</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 text-center animate-box">
+              <div class="work-grid" style="color:pink">
+                <div class="inner">
+                  <div class="desc">
+                    <h3>Coding Competitions</h3>
+                    <span class="cat">Social/Techical</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- Contact Section -->
 
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
