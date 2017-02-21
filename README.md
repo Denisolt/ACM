@@ -1,4 +1,3 @@
-# ACM
 # ACM NYIT Chapter
 This is the website created by <a href="https://github.com/denisolt">president</a> and <a href="https://github.com/msdocs">founder</a>
 for Association for Computing Machinery at NYIT manhattan campus <br/>
