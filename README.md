@@ -27,10 +27,10 @@ Capabilities
 -----------------------------------------
 By going to the admin page (localhost/admin) and entering superuser login and password </br>
 Admin can create events, posts, and access the db of signedup users </br>
-Creation of the event:
+Creation of the event:</br>
 ![alt tag](https://github.com/Denisolt/acm/blob/master/mainpage.png?raw=true)
-Creation of the blog post:
+Creation of the blog post:</br>
 ![alt tag](https://github.com/Denisolt/acm/blob/master/mainpage.png?raw=true)
-Accessing the db of signed up users:
+Accessing the db of signed up users:</br>
 ![alt tag](https://github.com/Denisolt/acm/blob/master/mainpage.png?raw=true)
 
