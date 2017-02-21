@@ -4,7 +4,7 @@ for Association for Computing Machinery at NYIT manhattan campus <br/>
 Website is build on Django, users are capable of adding events to the calendar, add blog posts and has a custom form for signup <br/>
 Signed up users are being stored in the DB together with Events and Posts. </br>
 
-Check out the website: <a href="http://acm-nyit.org">acm-nyit.org</a>
+Check out the website: <a href="http://acm-nyit.org">acm-nyit.org</a> </br>
 ![alt tag](https://github.com/Denisolt/acm/blob/master/readmeimage.png?raw=true)
 
 Installation
