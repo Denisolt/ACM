@@ -1,6 +1,6 @@
 # ACM NYIT Chapter
 This is the website created by <a href="https://github.com/denisolt">president</a> and <a href="https://github.com/msdocs">founder</a>
-for Association for Computing Machinery at NYIT manhattan campus <br/>
+of Association for Computing Machinery at NYIT manhattan campus <br/>
 Website is build on Django, users are capable of adding events to the calendar, add blog posts and has a custom form for signup <br/>
 Signed up users are being stored in the DB together with Events and Posts. </br>
 
