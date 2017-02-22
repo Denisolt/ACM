@@ -1,5 +1,5 @@
 # ACM NYIT Chapter
-This is the website created by president <a href="https://github.com/denisolt">Denisolt Shakhbulatov</a> and founder <a href="https://github.com/msdocs">Mahmoud Saleh</a>
+This is the website created by the president <a href="https://github.com/denisolt">Denisolt Shakhbulatov</a> and founder <a href="https://github.com/msdocs">Mahmoud Saleh</a>
 of Association for Computing Machinery at NYIT manhattan campus <br/>
 Website is build on Django, users are capable of adding events to the calendar, add blog posts and has a custom form for signup <br/>
 Signedup users are being stored in the DB together with Events and Posts. </br>
