@@ -79,11 +79,11 @@ DATETIME_FORMAT=[     # '2006-10-25 14:30:59'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '', #the name of the db
-        'USER': '', #the username of the db
-        'PASSWORD': '', #the password of the db
-        'HOST': '', #the host of the db
-        'PORT': '', #the port for your db
+        'NAME': 'dbvfimup4mhfsl', #the name of the db
+        'USER': 'qemboyjudijuek', #the username of the db
+        'PASSWORD': 'a5f16d474e2bf5517319e67ecdeaa9f29565238eaddea8f01a43617267e4d7a6', #the password of the db
+        'HOST': 'ec2-174-129-37-15.compute-1.amazonaws.com', #the host of the db
+        'PORT': '5432', #the port for your db
     }
 }
 
