@@ -38,3 +38,6 @@ def signup(request):
 
 def completed(request):
     return render(request, 'blog/Completed.html')
+
+def competition(request):
+    return render(request, 'blog/competition.html')
