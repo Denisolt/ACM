@@ -43,5 +43,18 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+   
+
+class Competition(models.Model):
+    team = models.CharField(max_length=100)
+    email = models.EmailField()
+    member1 = models.CharField(max_length=50)
+    member2 = models.CharField(max_length=50)
+    member3 = models.CharField(max_length=50)
+    file = models.FileField()
+    
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
     def __str__(self):
-        return self.title
+        return self.team

@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .forms import UserForm
-
+from .forms import UploadFileForm
 from .models import Event, Post
+
+#from somewhere import handle_uploaded_file
 
 # Create your views here.
 
@@ -39,5 +41,20 @@ def signup(request):
 def completed(request):
     return render(request, 'blog/Completed.html')
 
+#def competition(request):
+#    return render(request, 'blog/competition.html')
+
+
 def competition(request):
-    return render(request, 'blog/competition.html')
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            #handle_uploaded_file(request.FILES['file'])
+            post = form.save(commit=false)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('/completed')
+    else:
+        form = UploadFileForm()
+    return render(request, 'blog/competition.html', {'form': form})
