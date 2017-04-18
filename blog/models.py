@@ -51,7 +51,8 @@ class Competition(models.Model):
     member1 = models.CharField(max_length=50)
     member2 = models.CharField(max_length=50)
     member3 = models.CharField(max_length=50)
-    file = models.FileField()
+    submission = models.TextField()
+    #file = models.FileField()
     
     def publish(self):
         self.published_date = timezone.now()

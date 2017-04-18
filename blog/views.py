@@ -45,16 +45,30 @@ def completed(request):
 #    return render(request, 'blog/competition.html')
 
 
+#def competition(request):
+#    if request.method == 'POST':
+#        form = UploadFileForm(request.POST, request.FILES)
+#        if form.is_valid():
+#            #handle_uploaded_file(request.FILES['file'])
+#            post = form.save(commit=False)
+#            post.author = request.user
+#            post.published_date = timezone.now()
+#            post.save()
+#            return redirect('/completed')
+#    else:
+#        form = UploadFileForm()
+#    return render(request, 'blog/competition.html', {'form': form})
+
+
 def competition(request):
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
+    if request.method == "POST":
+        form = UserForm(request.POST)
         if form.is_valid():
-            #handle_uploaded_file(request.FILES['file'])
-            post = form.save(commit=false)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
+            form = form.save(commit=False)
+            form.save()
             return redirect('/completed')
     else:
-        form = UploadFileForm()
+        form = UserForm()
     return render(request, 'blog/competition.html', {'form': form})
+
+

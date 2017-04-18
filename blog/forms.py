@@ -11,4 +11,4 @@ class UploadFileForm(forms.ModelForm):
     
     class Meta:
     	model = Competition
-    	fields = ('team', 'email', 'member1', 'member2', 'member3', 'file')
+    	fields = ('team', 'email', 'member1', 'member2', 'member3', 'submission')
