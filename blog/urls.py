@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^signup', views.signup, name='signup'),
     url(r'^events', views.events, name='events'),
     url(r'^completed', views.completed, name='completed'),
+    url(r'^competition', views.competition, name='competition'),
 
 
 ]
