@@ -8,7 +8,6 @@ from .models import Event, Post
 
 # Create your views here.
 
-
 def index(request):
     events = Event.objects.filter().order_by('start')
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[:3]
@@ -64,8 +63,10 @@ def competition(request):
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
-            form = form.save(commit=False)
-            form.save()
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
             return redirect('/completed')
     else:
         form = UserForm()
